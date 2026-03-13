@@ -1,0 +1,101 @@
+/* app/globals.css or styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --shopee-orange: #ee4d2d;
+  --shopee-hover: #d73d20;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-orange {
+  background-color: var(--shopee-orange) !important;
+}
+
+.text-orange {
+  color: var(--shopee-orange) !important;
+}
+
+.btn-orange {
+  background-color: var(--shopee-orange);
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: var(--shopee-hover);
+  color: white;
+}
+
+.search-box {
+  border-radius: 20px !important;
+  font-size: 0.9rem;
+  padding-left: 15px;
+}
+
+/* Navbar overrides */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.category-bar {
+  font-size: 0.85rem;
+}
+
+.cat-item {
+  color: #555;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cat-item:hover {
+  color: var(--shopee-orange);
+}
+
+.product-card {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.product-title {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  line-height: 1.2;
+  height: 2.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.product-price {
+  color: var(--shopee-orange);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.banner {
+  background-color: white;
+  min-height: 200px;
+}
