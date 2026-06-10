@@ -1,0 +1,36 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 200px;
+}
+
+.cart {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
